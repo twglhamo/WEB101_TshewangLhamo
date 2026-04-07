@@ -306,8 +306,7 @@ async function deleteLocation(id) {
         const response = await fetch(`${PLACEHOLDER_API_URL}/${id}`, {
             method: 'DELETE'
         });
-
-        displayResponseInfo('DELETE', `${PLACEHOLDER_API_URL}/${id}`, response.status, {
+     displayResponseInfo('DELETE', `${PLACEHOLDER_API_URL}/${id}`, response.status, {
             message: 'Resource deleted successfully'
         });
 
